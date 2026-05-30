@@ -129,7 +129,7 @@ ultrapowers/
 │   ├── gemini-tools.md
 │   ├── anthropic-best-practices.md
 │   ├── persuasion-principles.md
-│   ├── graphviz-conventions.dot
+│   ├── graphviz-conventions.md
 │   ├── testing-skills-with-subagents.md
 │   ├── render-graphs.js
 │   └── examples/
@@ -157,7 +157,8 @@ ultrapowers/
 │   ├── test-pressure-2.md
 │   ├── test-pressure-3.md
 │   ├── testing-anti-patterns.md
-│   └── CREATION-LOG.md
+│   ├── CREATION-LOG.md
+│   └── ultrapowers-guide.md    ← 详细使用指南（本文件）
 └── assets/                      ← 静态资源
     └── frame-template.html
 ```
