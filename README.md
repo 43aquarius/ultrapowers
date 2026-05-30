@@ -42,26 +42,26 @@ cp -r ultrapowers/ ~/.claude/skills/ultrapowers/
 
 ## 八大层级 · 18 项技能
 
-| 层级 | 技能 | 一句话说明 |
-|------|------|-----------|
-| **启动层** | Skill Bootstrapping | 会话开始时建立规则、优先级和安全防护 |
-| **创意层** | Ideation | 动手写代码前，先通过协作对话完成设计并获得批准 |
-| **规划层** | Task Decomposition | 将设计文档分解为有序、可执行的实施计划 |
-| **执行层** | Delegate & Verify | 为每个任务派发独立子代理，两阶段审查（规范+质量） |
-| | Plan Execution | 在独立会话中从头到尾执行完整实施计划 |
-| **质量层** | Red-Green Cycle | 测试驱动开发：红→绿→重构，没看到失败就不写代码 |
-| | Root-Cause Analysis | 系统化调试：4 阶段流程，绝不修复症状 |
-| | Code Review Request | 派发独立审查代理，聚焦工作成果而非思维过程 |
-| | Review Feedback | 收到审查反馈后，逐项理解、分类、回应 |
-| | Pre-Completion Check | 声称完成前的最终验证清单 |
-| | Metric-Driven Dev | 用可量化的指标验证正确性，而非主观判断 |
-| **集成层** | Branch Isolation | 用 Git Worktree 创建隔离工作区 |
-| | Branch Wrap-Up | 验证完整性、清理、合并、更新文档 |
-| **优化层** | Parallel Dispatch | 多独立任务并发执行，每个域一个代理 |
-| | Budget Awareness | LLM API 成本管控：模型路由、预算追踪、提示缓存 |
-| **知识层** | Knowledge Capture | 从会话中提取原子"本能"，演化为可复用技能 |
-| | Skill Authoring | 遵循标准化规范创建和编辑技能 |
-| | Skill Discovery | 基于仓库证据将技能分类为 DAILY / LIBRARY |
+| 层级       | 技能                 | 一句话说明                                        |
+| ---------- | -------------------- | ------------------------------------------------- |
+| **启动层** | Skill Bootstrapping  | 会话开始时建立规则、优先级和安全防护              |
+| **创意层** | Ideation             | 动手写代码前，先通过协作对话完成设计并获得批准    |
+| **规划层** | Task Decomposition   | 将设计文档分解为有序、可执行的实施计划            |
+| **执行层** | Delegate & Verify    | 为每个任务派发独立子代理，两阶段审查（规范+质量） |
+|            | Plan Execution       | 在独立会话中从头到尾执行完整实施计划              |
+| **质量层** | Red-Green Cycle      | 测试驱动开发：红→绿→重构，没看到失败就不写代码    |
+|            | Root-Cause Analysis  | 系统化调试：4 阶段流程，绝不修复症状              |
+|            | Code Review Request  | 派发独立审查代理，聚焦工作成果而非思维过程        |
+|            | Review Feedback      | 收到审查反馈后，逐项理解、分类、回应              |
+|            | Pre-Completion Check | 声称完成前的最终验证清单                          |
+|            | Metric-Driven Dev    | 用可量化的指标验证正确性，而非主观判断            |
+| **集成层** | Branch Isolation     | 用 Git Worktree 创建隔离工作区                    |
+|            | Branch Wrap-Up       | 验证完整性、清理、合并、更新文档                  |
+| **优化层** | Parallel Dispatch    | 多独立任务并发执行，每个域一个代理                |
+|            | Budget Awareness     | LLM API 成本管控：模型路由、预算追踪、提示缓存    |
+| **知识层** | Knowledge Capture    | 从会话中提取原子"本能"，演化为可复用技能          |
+|            | Skill Authoring      | 遵循标准化规范创建和编辑技能                      |
+|            | Skill Discovery      | 基于仓库证据将技能分类为 DAILY / LIBRARY          |
 
 ## 标准工作流
 
@@ -96,12 +96,12 @@ ultrapowers/
 
 每个技能明确列出"不要做什么"。例如：
 
-| 危险信号 | 现实 |
-|---------|------|
-| "这只是个简单问题" | 问题就是任务。检查技能。 |
-| "让我先探索代码库" | 技能告诉你**如何**探索。先检查。 |
-| "我记得这个技能" | 技能会演进。阅读当前版本。 |
-| "这感觉很高效" | 无纪律的行动浪费时间。技能防止这个。 |
+| 危险信号           | 现实                                 |
+| ------------------ | ------------------------------------ |
+| "这只是个简单问题" | 问题就是任务。检查技能。             |
+| "让我先探索代码库" | 技能告诉你**如何**探索。先检查。     |
+| "我记得这个技能"   | 技能会演进。阅读当前版本。           |
+| "这感觉很高效"     | 无纪律的行动浪费时间。技能防止这个。 |
 
 ### 3. 上下文预算意识
 
@@ -121,34 +121,28 @@ ultrapowers/
 
 ## 文档索引
 
-| 文档 | 内容 |
-|------|------|
-| [SKILL.md](SKILL.md) | 入口路由器、技能注册表、标准工作流 |
-| [docs/ultrapowers-guide.md](docs/ultrapowers-guide.md) | 详细使用指南（架构、每项技能详解、快速参考表） |
-| [docs/CREATION-LOG.md](docs/CREATION-LOG.md) | 技能创建日志与测试验证记录 |
-| [references/anthropic-best-practices.md](references/anthropic-best-practices.md) | Anthropic API 技能编写最佳实践 |
-| [references/persuasion-principles.md](references/persuasion-principles.md) | 技能设计的说服力原则 |
-| [references/graphviz-conventions.md](references/graphviz-conventions.md) | 流程图视觉规范（用 DOT 自身描述） |
+| 文档                                                                             | 内容                                           |
+| -------------------------------------------------------------------------------- | ---------------------------------------------- |
+| [SKILL.md](SKILL.md)                                                             | 入口路由器、技能注册表、标准工作流             |
+| [docs/ultrapowers-guide.md](docs/ultrapowers-guide.md)                           | 详细使用指南（架构、每项技能详解、快速参考表） |
+| [docs/CREATION-LOG.md](docs/CREATION-LOG.md)                                     | 技能创建日志与测试验证记录                     |
+| [references/anthropic-best-practices.md](references/anthropic-best-practices.md) | Anthropic API 技能编写最佳实践                 |
+| [references/persuasion-principles.md](references/persuasion-principles.md)       | 技能设计的说服力原则                           |
+| [references/graphviz-conventions.md](references/graphviz-conventions.md)         | 流程图视觉规范（用 DOT 自身描述）              |
 
 ## 规模统计
 
-| 类别 | 数量 |
-|------|------|
-| 子技能模块 | 18 个 |
-| 子代理提示模板 | 6 个 |
-| 参考文档 | 9 个（含示例） |
-| 辅助脚本 | 4 个 |
-| 深度技术文档 | 12 篇 |
-| 总代码量 | ~8500 行 |
+| 类别           | 数量           |
+| -------------- | -------------- |
+| 子技能模块     | 18 个          |
+| 子代理提示模板 | 6 个           |
+| 参考文档       | 9 个（含示例） |
+| 辅助脚本       | 4 个           |
+| 深度技术文档   | 12 篇          |
+| 总代码量       | ~8500 行       |
 
 ## 许可
 
 本技能集作为参赛作品提交。内部技能内容源自开源 Superpowers 项目，遵循原项目许可。
 
 ---
-
-**参赛信息**
-
-- **作品名**: Ultrapowers — AI 编程全生命周期技能集
-- **赛事**: 2025 腾讯 OPC 大赛
-- **作者**: 大连理工大学
